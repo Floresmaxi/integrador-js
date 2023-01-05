@@ -1,0 +1,47 @@
+<%- include("../partials/head") %> 
+<body>
+  <%- include("../partials/nav") %> 
+  	<div class="container products-wrapper p-4">
+		<div class="row">
+			<div class="col-12">
+				<h3 class="products-title">Detalle del producto:</h3>
+			</div>
+		</div>
+		<div class="product-detail bg-light  border border-darck">
+			<div class="row p-3">
+				<div class="col-12 col-lg-8 text-center">
+					<img src="/images/<%= producto.imag  %>" alt="product image" class="product-detail-img">
+					<p class="product-detail-description text-start">
+						<%= producto.description  %>
+					</p>
+				</div>
+				<div class="col-12 col-lg-4">
+					<article class="product-detail-info">
+						<h2 class="product-detail-title">Nombre del producto:
+							<%= producto.name  %></h2>
+						<p class="product-detail-price ">
+							<span><%= producto.price  %></span>
+						</p>
+						<ul class="actions-list">
+							<li>
+								<i class='bx bxs-credit-card'></i>
+								<p>Pagá en 12 cuotas sin interes</p>
+							</li>
+							<li class="action-list">
+								<i class='bx bx-store'></i>
+								<p>Retiro gratis en locales del vendedor</p>
+							</li>
+						</ul>
+						<a href="#" class="buy-now-button ">COMPRAR AHORA</a><hr>
+						<a href="/products/edit/<%= producto.id  %>" class="btn action-button edit">EDITAR PRODUCTO</a>
+						<form action="/products/details<%= producto.id  %>?_method=DELETE" method="POST" style="display: inline-block" >
+							<button type="submit" class="btn action-button delete ">ELIMINAR</button>
+						</form>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+  <%- include("../partials/footer") %>    
+</body>
+</html>

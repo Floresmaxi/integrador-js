@@ -1,0 +1,15 @@
+<%- include("../partials/head") %> 
+<body>
+    <%- include("../partials/nav") %>
+    <div class="conatiner p-4 m-3 ">
+        <h2 class="products-title">Listado de productos</h2> 
+        <ul>
+                <% productos.forEach(products => { %>
+                    <li><%= products.name %> - <%= products.price %></li>
+                <% }) %>
+        </ul>
+        <a href="/home" class="btn btn-outline-primary buy-now-button my-3">volver al home</a>
+    </div>
+   
+</body>
+</html>

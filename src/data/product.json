@@ -1,26 +1,34 @@
 [
-    {
-        "id":0,
-        "name": "Smart tv Philips 50 4K UHD",
-        "price": "$62.259",
-        "brand": "Philips",
-        "description": "El compromiso de Philips es brindar nuevas e innovadoras tecnologías.Es por esa razón que se centra en los detalles para poder ofrecer productos que marcan la diferencia y crean una experiencia visual más increíble y auténtica.Con el Smart TV 50PUD7406 vas a acceder a las aplicaciones en las que se encuentran tus contenidos favoritos. Además, podés navegar por Internet, interactuar en redes sociales y divertirte con videojuegos.",
-        "imag": "Smart-tv-Philips-50-4K-UHD.jpg"
-    },
-    {
-        "id":1,
-        "name": "Celular TCL30e 64gb space gray",
-        "price": "$40.399",
-        "brand": "TCL",
-        "description": "Doble cámara y más detallesSus 2 cámaras traseras de 50 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.Más para ver Con su pantalla IPS de 6.52,disfrutá de colores intensos y mayor nitidez en todos tus contenidos.Mayor rendimiento.Su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.Desbloqueo veloz con tu huella dactilar.Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.Batería de duración superior.¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.Gran capacidad de almacenamiento.Con su memoria interna de 64 GB siempre tendrás espacio para almacenar archivos y documentos importantes. Además, podrás guardar películas, series y videos para reproducirlos cuando quieras sin conexión.",
-        "imag": "celular-tcl-30e-64gb-space-gray.jpg"
-    },
-    {
-        "id":2,
-        "name": "Samsung Galaxy a23 128gb lightblue 4gb ram",
-        "price": "$38.599",
-        "brand": "Samsung Galaxy",
-        "description": "Fotografía profesional en tu bolsillo.Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.Mayor rendimiento.Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.Desbloqueo facial y dactilar.Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.Batería de duración superior.¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.",
-        "imag": "samsung-galaxy-a23-128-gb-light-blue-4-gb-ram.jpg"
-    }
+  {
+    "id": 1,
+    "name": "Smart tv Philips 50 4K UHD",
+    "price": "$62.259",
+    "brand": "Philips",
+    "description": "El compromiso de Philips es brindar nuevas e innovadoras tecnologías.Es por esa razón que se centra en los detalles para poder ofrecer productos que marcan la diferencia y crean una experiencia visual más increíble y auténtica.Con el Smart TV 50PUD7406 vas a acceder a las aplicaciones en las que se encuentran tus contenidos favoritos. Además, podés navegar por Internet, interactuar en redes sociales y divertirte con videojuegos.",
+    "imag": "tvsmart.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Celular TCL30e 64gb space gray",
+    "price": "$40.399",
+    "brand": "TCL",
+    "description": "Doble cámara y más detallesSus 2 cámaras traseras de 50 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.Más para ver Con su pantalla IPS de 6.52,disfrutá de colores intensos y mayor nitidez en todos tus contenidos.Mayor rendimiento.Su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.Desbloqueo veloz con tu huella dactilar.Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.Batería de duración superior.¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.Gran capacidad de almacenamiento.Con su memoria interna de 64 GB siempre tendrás espacio para almacenar archivos y documentos importantes. Además, podrás guardar películas, series y videos para reproducirlos cuando quieras sin conexión.",
+    "imag": "celular-tcl-30e-64gb-space-gray.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Apple Iphone 11 128gb Negro ",
+    "price": "$500",
+    "brand": "Apple",
+    "description": "Graba videos 4K y captura retratos espectaculares y paisajes increíbles con el sistema de dos cámaras. Toma grandes fotos con poca luz gracias al modo Noche. Disfruta colores reales en las fotos, videos y juegos con la pantalla Liquid Retina de 6.1 pulgadas (3). Aprovecha un rendimiento sin precedentes en los juegos, la realidad aumentada y la fotografía con el chip A13 Bionic. Haz mucho más sin necesidad de volver a cargar el teléfono gracias a su batería de larga duración (2). Y no te preocupes si se moja, el iPhone 11 tiene una resistencia al agua de hasta 30 minutos a una profundidad máxima de 2 metros (1).",
+    "imag": "refurb-iphone11-black-2019.jpg"
+  },
+  {
+    "id": 4,
+    "name": " Notebook hp 15.6 250 i5-1135g7 8gb ssd256 ",
+    "price": "$20000",
+    "brand": "Hp",
+    "description": "descripción del producto",
+    "imag": "1672860483756.jpg"
+  }
 ]
