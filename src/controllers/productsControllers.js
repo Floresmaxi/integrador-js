@@ -1,46 +1,44 @@
-const { render } = require("ejs");
-const path = require("path");
-const fs = require("fs");
+const path = require("path")
+const fs = require("fs")
 
-const pathJson = path.resolve(__dirname, "../data/product.json");
-const productJson = fs.readFileSync(pathJson, "utf-8");
-const products = JSON.parse(productJson);
-
+const Product = require("../data/models/Product");
 
 let controller = {
     
-    details: (req,res) => {
-        let product = products.find(product => {
-            return product.id == req.params.id
-        })
+    details: async (req,res) => {
+
+        const product = await Product.findById(req.params.id)
         res.render("products/details", {producto:product});
     },
     list: (req, res) => {
         res.render("products/list", {productos:products});
     },
-    edit: (req, res) => {
-        let product = products.find(product => {
-            return product.id == req.params.id
-        })
+    edit: async (req, res) => {
+        const product = await Product.findById(req.params.id)
         res.render("products/edit", {producto:product});
     },
     create: (req,res) => {
         res.render("products/create");
     },
-    store: (req,res) => {
+    store: async (req,res) => {
         if (!req.file) {
             return res.send("Oye, la extensión de la imagen debe ser .jpg, .png, .gif")
-        };
+        }
+        await Product.create({...req.body, imag: req.file.filename})
 
-        const lastProduct = products[products.length - 1];
-        const newProduct = {
-            id: lastProduct.id + 1,
-            ...req.body,   
-            imag: req.file.filename,
-        };
-        products.push(newProduct);
-        fs.writeFileSync(pathJson, JSON.stringify(products, null, 2))
-        return res.send("ok, viniste por post")
+        return res.redirect("/home");
+    },
+    delete: (req, res) => {
+        Product.delete({_id: req.params.id}, (err, products) => {
+            if (err) {
+                return res.status(500).json({ error: err.message});
+            }
+            return res.redirect("/home");
+        });
+    },
+    update: async (req,res) => {
+            const productUpdate =  await Product.findByIdAndUpdate(req.params.id,req.body);
+            return res.redirect("/home");
     }
 };
 

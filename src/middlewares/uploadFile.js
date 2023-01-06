@@ -16,7 +16,7 @@ const upload = multer({
     fileFilter: function (req, file, cb) {
         //si la extension del archivo no es el esperado
         const fileExtension = path.extname(file.originalname);
-        if (![".jpg, .png, .gif"].includes(fileExtension)) {
+        if (![".jpg", ".png", ".gif"].includes(fileExtension)) {
             return cb(null, false);
         }
         //si la extensión del archivo es el esperado

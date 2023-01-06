@@ -1,13 +1,9 @@
-const { render } = require("ejs");
-const path = require("path");
-const fs = require("fs");
-
-const pathJson = path.resolve(__dirname, "../data/product.json");
-const productJson = fs.readFileSync(pathJson, "utf-8");
-const products = JSON.parse(productJson);
+const Product = require("../data/models/Product");
 
 module.exports = {
-    home: function (req, res) {
+    home: async function (req, res) {
+        const products = await Product.find()
+
         res.render("home",{productos:products})
     },
 }

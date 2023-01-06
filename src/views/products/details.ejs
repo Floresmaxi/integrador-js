@@ -34,7 +34,7 @@
 						</ul>
 						<a href="#" class="buy-now-button ">COMPRAR AHORA</a><hr>
 						<a href="/products/edit/<%= producto.id  %>" class="btn action-button edit">EDITAR PRODUCTO</a>
-						<form action="/products/details<%= producto.id  %>?_method=DELETE" method="POST" style="display: inline-block" >
+						<form action="/products/delete/<%= producto.id  %>" method="POST" style="display: inline-block" >
 							<button type="submit" class="btn action-button delete ">ELIMINAR</button>
 						</form>
 					</article>

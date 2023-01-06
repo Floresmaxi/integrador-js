@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 //Base de datos
-//const dbConnect = require("./config/mongo")
+const dbConnect = require("./config/mongo");
 
 app.use(express.static(path.resolve(__dirname, "../public")));
 app.set("view engine", "ejs");
@@ -24,5 +24,6 @@ app.use((req, res, next) => {
 });
 
 
-//dbConnect()
+dbConnect()
+
 app.listen(3000, () => console.log("Servidor corriendo en el puerto 3000"));

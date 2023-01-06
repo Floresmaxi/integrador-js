@@ -1,4 +1,5 @@
-const { Schema, model} = require("mongoose");
+const { Schema, model, mongo} = require("mongoose");
+const mongooseDelete = require("mongoose-delete")
 
 const Product =  new Schema ({
 
@@ -7,7 +8,7 @@ const Product =  new Schema ({
         require: true
     },
     price:{
-        type: Number,
+        type: String,
         require: true
     },
     brand:{
@@ -25,6 +26,6 @@ const Product =  new Schema ({
 
 
 })
-
+Product.plugin(mongooseDelete, {overrideMethods: "all"})
 
 module.exports = model("Product", Product)
